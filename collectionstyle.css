@@ -102,3 +102,14 @@ nav ul li a.active {
 .add-to-cart:hover {
     background-color: #2ecc71;
 }
+
+/* Media Query for Smaller Screens */
+@media (max-width: 768px) {
+    .products {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));  /* Smaller columns for small screens */
+    }
+
+    .product-item img {
+        height: 150px;  /* Adjust image size for smaller screens */
+    }
+}
