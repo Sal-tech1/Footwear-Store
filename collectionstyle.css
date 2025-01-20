@@ -1,141 +1,170 @@
-/* General Styles */
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
 body {
-  font-family: Arial, sans-serif;
-  background-color: #282828; /* Charcoal Gray background for the whole page */
-  color: white;
-  margin: 0;
-  padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
 }
 
-h1, h2, h3 {
-  color: #fff; /* White text for headings */
+/* Navigation Bar */
+nav {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
 }
 
-p {
-  color: #f4f4f4; /* Slightly lighter text for readability */
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
 }
 
-/* Hero Section (First section with large heading) */
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    text-decoration: underline;
+    color: #ff7b7b;
+}
+
+/* Hero Section */
 .hero {
-  background-color: #F8A900;  /* Vibrant Yellow */
-  color: #333;  /* Dark text for the hero section */
-  text-align: center;
-  padding: 50px 20px;
+    background-color: #444;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
 }
 
 .hero h1 {
-  font-size: 3em;
-  margin: 0;
+    font-size: 36px;
+    margin-bottom: 10px;
 }
 
 .hero p {
-  font-size: 1.2em;
-  margin-top: 10px;
+    font-size: 18px;
 }
 
 /* Categories Section */
 .categories {
-  background-color: #4B0082;  /* Indigo */
-  color: white;
-  padding: 40px 20px;
-  text-align: center;
+    text-align: center;
+    padding: 40px 20px;
 }
 
 .categories h2 {
-  font-size: 2.5em;
-  margin-bottom: 20px;
-  color: #fff;
+    font-size: 30px;
+    margin-bottom: 10px;
 }
 
 .categories p {
-  font-size: 1.2em;
-  margin-bottom: 30px;
-  color: #f4f4f4;
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 30px;
 }
 
-/* Category Items - Displaying each footwear category */
 .category-item {
-  display: inline-block;
-  width: 30%;
-  margin: 20px;
-  text-align: center;
-  background-color: #333;  /* Dark background for category items */
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: inline-block;
+    width: 30%;
+    margin: 10px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .category-item img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-  transition: transform 0.3s ease;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
 }
 
 .category-item h3 {
-  font-size: 1.8em;
-  color: #fff;  /* White text for the category title */
-  margin-top: 10px;
+    font-size: 22px;
+    margin-top: 15px;
+    color: #333;
 }
 
 .category-item p {
-  color: #ccc;  /* Light gray text for the description */
-  font-size: 1em;
-  margin-top: 5px;
+    color: #777;
+    margin-top: 10px;
+    font-size: 16px;
 }
 
-/* Hover Effects for Category Items */
 .category-item:hover {
-  transform: scale(1.05);  /* Slightly enlarges the item */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);  /* Darker shadow for hover effect */
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-.category-item:hover img {
-  transform: scale(1.1);  /* Slight zoom effect on image */
-}
-
-/* Features Section (Why Choose Our Shoes?) */
+/* Features Section */
 .features {
-  background-color: #FF7F50;  /* Coral background for contrast */
-  color: white;
-  padding: 40px;
-  text-align: center;
-  margin-top: 40px;
-  border-radius: 10px;
+    background-color: #ff7b7b;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
 }
 
 .features h2 {
-  font-size: 2.5em;
-  margin-bottom: 20px;
+    font-size: 28px;
+    margin-bottom: 20px;
 }
 
 .features ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
+    list-style-type: none;
+    padding: 0;
+    font-size: 18px;
 }
 
 .features ul li {
-  font-size: 1.2em;
-  color: #f4f4f4;
-  margin: 10px 0;
-  line-height: 1.8;
-}
-
-.features ul li strong {
-  color: #333; /* Highlight important features in a dark color */
-}
-
-.features ul li::before {
-  content: "✓ "; /* Add a check mark before each feature */
-  color: #FFD700; /* Gold color for check marks */
-  font-weight: bold;
+    margin: 10px 0;
 }
 
 .features p {
-  font-size: 1.1em;
-  margin-top: 20px;
-  color: #f4f4f4;
-  font-style: italic;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+/* Footer Section */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    font-size: 16px;
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+    .category-item {
+        width: 45%;
+    }
+}
+
+@media (max-width: 480px) {
+    .category-item {
+        width: 90%;
+    }
 }
