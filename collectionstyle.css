@@ -88,6 +88,7 @@ nav ul li a.active {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
 }
 
 .category-item img {
@@ -111,6 +112,32 @@ nav ul li a.active {
 .category-item:hover {
     transform: scale(1.05);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Add to Cart Button Styling */
+.image-container {
+    position: relative;
+}
+
+.add-to-cart {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #ff7b7b;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    opacity: 0.8;
+    transition: background-color 0.3s, opacity 0.3s;
+}
+
+.add-to-cart:hover {
+    background-color: #e67e6d;
+    opacity: 1;
 }
 
 /* Features Section */
