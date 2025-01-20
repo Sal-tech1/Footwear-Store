@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shoe Categories</title>
-    <link rel="stylesheet" href="collectionstyle.css"> <!-- Link to your CSS file -->
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
 </head>
 <body>
     <!-- Navigation Bar -->
     <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
-            
+            <li><a href="categories.html" class="active">Categories</a></li>
             <li><a href="about.html">About</a></li>
         </ul>
     </nav>
@@ -28,19 +28,28 @@
         <p>Browse through our categories of high-quality footwear for all your needs.</p>
 
         <div class="category-item" id="formal">
-            <img src="formal-shoes.jpeg.webp" alt="Formal Shoes">
+            <div class="image-container">
+                <img src="formal-shoes.jpeg" alt="Formal Shoes">
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
             <h3>Formal Shoes</h3>
             <p>Elegant footwear for formal events and business meetings.</p>
         </div>
 
         <div class="category-item" id="sandals">
-            <img src="sandals.jpeg" alt="Sandals">
+            <div class="image-container">
+                <img src="sandals.jpeg" alt="Sandals">
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
             <h3>Sandals</h3>
             <p>Comfortable and breathable sandals for casual wear.</p>
         </div>
 
         <div class="category-item" id="shopping">
-            <img src="shopping.webp" alt="Shopping Shoes">
+            <div class="image-container">
+                <img src="shopping.webp" alt="Shopping Shoes">
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
             <h3>Shopping Shoes</h3>
             <p>Stylish shoes perfect for your shopping trips.</p>
         </div>
@@ -76,6 +85,15 @@
             item.addEventListener('mouseout', function() {
                 item.style.transform = 'scale(1)';
                 item.style.boxShadow = '0 4px 8px rgba(0, 0, 0, 0.1)';
+            });
+        });
+
+        // Add "Add to Cart" functionality
+        const addToCartButtons = document.querySelectorAll('.add-to-cart');
+
+        addToCartButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                alert('Item added to cart!');
             });
         });
     </script>
