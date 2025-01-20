@@ -95,3 +95,50 @@ body {
     margin: 0 auto;
     display: block;
   }
+  /* Basic menu styling */
+.menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #333;
+  display: flex;
+}
+
+.menu > li {
+  position: relative;
+}
+
+.menu a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+}
+
+.menu a:hover {
+  background-color: #575757;
+}
+
+/* Dropdown styling */
+.dropdown-menu {
+  list-style-type: none;
+  position: absolute;
+  top: 100%; /* Align below the parent item */
+  left: 0;
+  background-color: #333;
+  display: none;
+  padding: 0;
+  margin: 0;
+}
+
+.dropdown-menu li {
+  width: 150px;
+}
+
+.dropdown-menu a {
+  padding: 10px 15px;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
