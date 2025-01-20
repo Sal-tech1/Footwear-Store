@@ -3,7 +3,26 @@ body {
   margin: 0;
   padding: 0;
   line-height: 1.6;
-  background-color: #f4f4f4;
+  background-color: #282828;  /* Charcoal Gray */
+  color: white;
+  
+}
+
+/* Hero Section with Contrasting Text */
+.hero {
+  background-color: #F8A900;  /* Vibrant Yellow */
+  color: #333;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+/* Shoe Categories Section */
+.categories {
+  background-color: #4B0082;  /* Indigo */
+  color: white;
+  padding: 40px;
+  text-align: center;
+}
 }
 
 h1, h2, h3 {
