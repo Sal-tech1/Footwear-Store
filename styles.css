@@ -142,3 +142,28 @@ body {
 .dropdown:hover .dropdown-menu {
   display: block;
 }
+.categories {
+  text-align: center;
+  padding: 40px;
+}
+
+.category-item {
+  display: inline-block;
+  width: 30%;
+  margin: 20px;
+}
+
+.category-item img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.category-item h3 {
+  margin-top: 10px;
+  color: #333;
+}
+
+.category-item p {
+  font-size: 14px;
+  color: #666;
+}
