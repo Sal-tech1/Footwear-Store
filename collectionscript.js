@@ -15,11 +15,9 @@
         });
 
         // Add "Add to Cart" functionality
-        const addToCartButtons = document.querySelectorAll('.add-to-cart');
-
-        addToCartButtons.forEach(button => {
-            button.addEventListener('click', function() {
-                alert('Item added to cart!');
+        function addToCart(categories) {
+  alert(`${categories} has been added to your cart!`);
+}
             });
         });
     </script>
