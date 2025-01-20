@@ -1,48 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Shoe Collections</title>
-  <link rel="stylesheet" href="collectionstyle.css"> <!-- Link to external CSS -->
- 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoe Categories</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
 </head>
 <body>
- 
-  <!-- Shoe Categories Section -->
-  <section id="categories" class="categories">
-    <h2>Shoe Categories</h2>
-    <div class="category-item">
-      <img src="shopping.webp" alt="Running Shoes">
-      <h3>Running Shoes</h3>
-      <p>Perfect for athletes, offering exceptional comfort and support during your runs.</p>
-    </div>
-    <div class="category-item">
-      <img src="formal-shoes.jpeg.webp" alt="Formal Shoes">
-      <h3>Formal Shoes</h3>
-      <p>Stay sharp and elegant with our premium leather shoes for every formal occasion.</p>
-    </div>
-    <div class="category-item">
-      <img src="sandals.jpeg" alt="Sandals">
-      <h3>Sandals</h3>
-      <p>Breathe easy with our stylish and comfortable sandals, perfect for casual outings.</p>
-    </div>
-  </section>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="categories.html" class="active">Categories</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
 
-  <!-- Shoe Features Section -->
-  <section class="features">
-    <h2>Why Choose Our Shoes?</h2>
-    <ul>
-      <li><strong>Comfort:</strong> Ergonomic designs to keep you comfortable all day.</li>
-      <li><strong>Durability:</strong> Made with premium materials for long-lasting wear.</li>
-      <li><strong>Style:</strong> Stay trendy with a wide range of fashionable options.</li>
-      <li><strong>Performance:</strong> Specially engineered for sports and outdoor activities.</li>
-    </ul>
-  </section>
-  <nav>
-    <a href="index.html">Home</a>
-    <br>
-    <a href="about.html">About Us</a>
-  </nav>
+    <!-- Hero Section for Categories Page -->
+    <section class="hero">
+        <h1>Explore Our Shoe Categories</h1>
+        <p>Find the perfect footwear for every occasion</p>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories">
+        <h2>Our Footwear Categories</h2>
+        <p>Browse through our categories of high-quality footwear for all your needs.</p>
+
+        <div class="category-item" id="formal">
+            <img src="formal-shoes.jpeg" alt="Formal Shoes">
+            <h3>Formal Shoes</h3>
+            <p>Elegant footwear for formal events and business meetings.</p>
+        </div>
+
+        <div class="category-item" id="sandals">
+            <img src="sandals.jpeg" alt="Sandals">
+            <h3>Sandals</h3>
+            <p>Comfortable and breathable sandals for casual wear.</p>
+        </div>
+
+        <div class="category-item" id="shopping">
+            <img src="shopping.webp" alt="Shopping Shoes">
+            <h3>Shopping Shoes</h3>
+            <p>Stylish shoes perfect for your shopping trips.</p>
+        </div>
+    </section>
+
+    <!-- Why Choose Our Shoes Section -->
+    <section class="features">
+        <h2>Why Choose Our Shoes?</h2>
+        <ul>
+            <li><strong>High Quality</strong> materials</li>
+            <li><strong>Affordable</strong> prices</li>
+            <li><strong>Fast Delivery</strong> to your door</li>
+        </ul>
+        <p>Our shoes are designed to give you comfort and style, no matter the occasion!</p>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 Your Shoe Store. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript for Interactive Features -->
+    <script>
+        // This script adds hover effects to the category items
+        const categoryItems = document.querySelectorAll('.category-item');
+
+        categoryItems.forEach(item => {
+            item.addEventListener('mouseover', function() {
+                item.style.transform = 'scale(1.05)';
+                item.style.boxShadow = '0 8px 16px rgba(0, 0, 0, 0.3)';
+            });
+
+            item.addEventListener('mouseout', function() {
+                item.style.transform = 'scale(1)';
+                item.style.boxShadow = '0 4px 8px rgba(0, 0, 0, 0.1)';
+            });
+        });
+    </script>
 </body>
 </html>
