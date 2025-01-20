@@ -3,65 +3,61 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Footwear store</title>
+  <title>Footwear Store</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-      
+
   <header>
-  
     <h1>Footwhere? Foot here!</h1>
     <h2>Find your perfect pair of shoes!</h2>
   </header>
-     <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="collections.html" class="active">Collections</a></li>
-            <li><a href="about.html">About</a></li>
-        </ul>
-    </nav>
+
+  <nav>
+    <ul>
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="collections.html">Collections</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+  </nav>
+
   <main>
     <!-- Intro Section -->
     <section class="intro">
       <h2>Welcome to Shoe Haven</h2>
-
       <p>
         At the Footwear Store, we pride ourselves on offering a wide range of stylish, durable, and comfortable footwear.
         Whether you're looking for casual sneakers, formal shoes, or sportswear, we've got something for everyone!
         We worry about your footwear, so that you don't have to.
-    </p>
-
-    <br>
-   
-    <p>Here are some of our products:</p>
+      </p>
+      <p>Here are some of our products:</p>
     </section>
-  
+
     <!-- Products Section -->
     <div class="products-container">
       <section class="product" id="shoe1">
-        <img src="shoe1.jpeg" alt="Sneakers">
+        <img src="shoe1.jpeg" alt="Sleek Sneakers">
         <h2>Sleek Sneakers</h2>
         <p>Comfortable and stylish for all-day wear.</p>
-        <button onclick="addToCart('Sleek Sneakers')">Add to Cart</button>
+        <button class="add-to-cart" data-product="Sleek Sneakers">Add to Cart</button>
       </section>
-  
-      <section class="product" id="shoe3">
-        <img src="shoe.jpeg" alt="Boots">
+
+      <section class="product" id="shoe2">
+        <img src="shoe.jpeg" alt="Classy Boots">
         <h2>Classy Boots</h2>
-        <p>Designed for maximum performance 
-            and comfort while handling the roughest terrains.</p>
-        <button onclick="addToCart('Classy Boots')">Add to Cart</button>
+        <p>Designed for maximum performance and comfort while handling the roughest terrains.</p>
+        <button class="add-to-cart" data-product="Classy Boots">Add to Cart</button>
       </section>
     </div>
-      <section class="hero">
-  <h1>Your Perfect Pair Awaits</h1>
-  <p>From running shoes to formal wear, step into unmatched comfort and style.</p>
-  <a href="collections.html" class="cta-button">Explore Collections</a>
-</section>
-      
-   
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <h1>Your Perfect Pair Awaits</h1>
+      <p>From running shoes to formal wear, step into unmatched comfort and style.</p>
+      <a href="collections.html" class="cta-button">Explore Collections</a>
+    </section>
   </main>
- 
+
   <footer>
     <p>© 2025 Footwear Store. All rights reserved.</p>
   </footer>
