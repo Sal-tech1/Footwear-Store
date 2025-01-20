@@ -1,5 +1,3 @@
-// JavaScript to add functionality for "Add to Cart" buttons
-
 // Function to handle adding products to the cart
 function addToCart(event) {
     const product = event.target.dataset.product;
