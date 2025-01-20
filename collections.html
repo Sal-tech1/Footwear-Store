@@ -1,58 +1,49 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shoe Categories</title>
-    <link rel="stylesheet" href="collectionstyle.css"> <!-- Link to your CSS file -->
+    <title>Collections - Shoe Store</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <!-- Navigation Bar -->
     <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
-            
+            <li><a href="collections.html" class="active">Collections</a></li>
             <li><a href="about.html">About</a></li>
+            <li>Cart: <span class="cart-counter">0</span></li>
         </ul>
     </nav>
 
-    <!-- Hero Section for Categories Page -->
+    <!-- Hero Section -->
     <section class="hero">
-        <h1>Explore Our Shoe Categories</h1>
-        <p>Find the perfect footwear for every occasion</p>
+        <h1>Explore Our Shoe Collections</h1>
+        <p>High-quality footwear for all your needs.</p>
     </section>
 
-    <!-- Categories Section -->
-    <section class="categories">
-        <h2>Our Footwear Categories</h2>
-        <p>Browse through our categories of high-quality footwear for all your needs.</p>
-
-        <div class="category-item" id="formal">
-    <div class="image-container">
-        <!-- Update the image source to the correct file name -->
-        <img src="formal-shoes.jpeg.webp" alt="Formal Shoes">
-        <button class="add-to-cart">Add to Cart</button>
-    </div>
-    <h3>Formal Shoes</h3>
-    <p>Elegant footwear for formal events and business meetings.</p>
-</div>
-
-        <div class="category-item" id="sandals">
-            <div class="image-container">
-                <img src="sandals.jpeg" alt="Sandals">
-                <button class="add-to-cart">Add to Cart</button>
-            </div>
-            <h3>Sandals</h3>
-            <p>Comfortable and breathable sandals for casual wear.</p>
+    <!-- Collections Section -->
+    <section class="products">
+        <h2>Our Collections</h2>
+        <div class="product-item">
+            <img src="formal-shoes.jpeg.webp" alt="Formal Shoes">
+            <h3>Formal Shoes</h3>
+            <p>Perfect for business meetings and formal events.</p>
+            <button class="add-to-cart" data-product="Formal Shoes">Add to Cart</button>
         </div>
-
-        <div class="category-item" id="shopping">
-            <div class="image-container">
-                <img src="shopping.webp" alt="Shopping Shoes">
-                <button class="add-to-cart">Add to Cart</button>
-            </div>
-            <h3>Shopping Shoes</h3>
-            <p>Stylish shoes perfect for your shopping trips.</p>
+        <div class="product-item">
+            <img src="sandals.jpeg" alt="Sandals">
+            <h3>Sandals</h3>
+            <p>Lightweight and stylish for casual outings.</p>
+            <button class="add-to-cart" data-product="Sandals">Add to Cart</button>
+        </div>
+        <div class="product-item">
+            <img src="shopping.webp" alt="Shopping Shoes">
+            <h3>Running Shoes</h3>
+            <p>Comfortable for long days out and about.</p>
+            <button class="add-to-cart" data-product="Shopping Shoes">Add to Cart</button>
         </div>
     </section>
 
