@@ -7,17 +7,14 @@
 /* Body and Background */
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
-    background-color: #f4f4f4; /* Light grey background */
+    background-color: #f4f4f4;
 }
 
 /* Navigation Bar */
 nav ul {
     display: flex;
     justify-content: center;
-    background-color: #333; /* Dark grey background */
+    background-color: #333;
     padding: 10px 0;
     list-style: none;
 }
@@ -27,7 +24,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white; /* White text */
+    color: white;
     text-decoration: none;
     font-size: 18px;
 }
@@ -36,35 +33,12 @@ nav ul li a.active {
     font-weight: bold;
 }
 
-/* Header Styling */
-header {
-    text-align: center;
-    padding: 20px;
-    background-color: #f4f4f4; /* Light grey background */
-}
-
-header h1 {
-    margin: 0;
-    font-size: 2.5em;
-    color: #ff6600; /* Orange for the first header */
-}
-
-header h2 {
-    margin: 10px 0 0 0;
-    font-size: 1.8em;
-    color: white; /* White for the second header */
-    background-color: #333; /* Dark grey background */
-    padding: 10px 20px;
-    display: inline-block; /* Adjust size to fit content */
-    border-radius: 5px; /* Slight rounding for a polished look */
-}
-
 /* Hero Section */
 .hero {
     text-align: center;
     padding: 50px;
-    background-color: #ff6600; /* Orange */
-    color: white; /* White text */
+    background-color: #ff6600;
+    color: white;
 }
 
 .hero h1 {
@@ -77,108 +51,64 @@ header h2 {
 }
 
 /* Product Section (Collections) */
-.products-container {
-    display: flex; /* Arrange product cards horizontally */
-    justify-content: space-around;
-    flex-wrap: wrap; /* Wrap cards for smaller screens */
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));  /* Creates columns with a minimum size of 280px */
+    gap: 20px;
     padding: 20px;
-    margin: 0 auto;
-    background-color: #f4f4f4; /* Match body background */
-    width: 100%;
+    margin: 0 20px;
 }
 
-.product {
-    width: 30%;
-    margin: 10px;
-    text-align: center;
-    background: white; /* White background for product cards */
-    padding: 20px;
+/* Product Item */
+.product-item {
+    background-color: white;
     border: 1px solid #ddd;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-.product img {
-    max-width: 100%;
-    height: auto;
-    margin: 0 auto;
-    display: block;
+.product-item img {
+    width: 100%;
+    height: 200px;  /* Fixed height to ensure consistency */
+    object-fit: cover;  /* Ensures the images don't stretch */
+    margin-bottom: 15px;  /* Space between the image and the text */
 }
 
-.product h3 {
+.product-item h3 {
     margin-top: 15px;
     font-size: 24px;
-    color: #333; /* Dark text for titles */
 }
 
-.product p {
+.product-item p {
     font-size: 16px;
     margin: 10px 0;
-    color: #666; /* Grey text for descriptions */
 }
 
-button {
-    background: #ff6600; /* Orange buttons */
+.add-to-cart {
+    background-color: #27ae60;
     color: white;
+    padding: 10px 20px;
     border: none;
-    padding: 10px 15px;
     cursor: pointer;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
+    font-size: 16px;
+    transition: background-color 0.3s ease;  /* Smooth hover effect */
 }
 
-button:hover {
-    background: #e65c00; /* Darker orange on hover */
-}
-
-/* Categories Section */
-.categories {
-    text-align: center;
-    padding: 40px;
-}
-
-.category-item {
-    display: inline-block;
-    width: 30%;
-    margin: 20px;
-}
-
-.category-item img {
-    width: 100%;
-    border-radius: 8px;
-}
-
-.category-item h3 {
-    margin-top: 10px;
-    color: #333; /* Dark title color */
-}
-
-.category-item p {
-    font-size: 14px;
-    color: #666; /* Grey text */
-}
-
-/* Features Section */
-.features {
-    background-color: #f9f9f9; /* Light grey for distinction */
-    padding: 30px;
-    text-align: center;
+.add-to-cart:hover {
+    background-color: #2ecc71;
 }
 
 /* Media Query for Smaller Screens */
 @media (max-width: 768px) {
-    .products-container {
-        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Smaller columns */
+    .products {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));  /* Smaller columns for small screens */
     }
 
-    .product img {
-        height: 150px; /* Adjust image size */
+    .product-item img {
+        height: 150px;  /* Adjust image size for smaller screens */
     }
-}
-
-/* Footer */
-footer {
-    text-align: center;
-    padding: 10px;
-    background-color: #333; /* Dark grey */
-    color: white; /* White text */
 }
