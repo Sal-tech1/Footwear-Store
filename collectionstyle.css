@@ -40,14 +40,23 @@ nav ul li a.active {
 header {
     text-align: center;
     padding: 20px;
-    background-color: #333; /* Dark grey */
-    color: white; /* White text */
+    background-color: #f4f4f4; /* Light grey background */
 }
 
 header h1 {
     margin: 0;
     font-size: 2.5em;
-    color: #ff6600; /* Orange for contrast */
+    color: #ff6600; /* Orange for the first header */
+}
+
+header h2 {
+    margin: 10px 0 0 0;
+    font-size: 1.8em;
+    color: white; /* White for the second header */
+    background-color: #333; /* Dark grey background */
+    padding: 10px 20px;
+    display: inline-block; /* Adjust size to fit content */
+    border-radius: 5px; /* Slight rounding for a polished look */
 }
 
 /* Hero Section */
